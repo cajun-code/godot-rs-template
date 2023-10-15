@@ -1,0 +1,41 @@
+# x86_64-pc-windows-msvc
+# x86_64-pc-windows-gnu
+[tasks.build_win_x86_debug]
+command = "cargo"
+args = ["build", "--target", "x86_64-pc-windows-gnu"]
+
+[tasks.build_win_x86_release]
+command = "cargo"
+args = ["build", "--target", "x86_64-pc-windows-gnu", "--release"]
+
+# aarch64-apple-darwin
+[tasks.build_mac_arm64_debug]
+command = "cargo"
+args = ["build", "--target", "aarch64-apple-darwin"]
+
+# aarch64-apple-darwin
+[tasks.build_mac_arm64_release]
+command = "cargo"
+args = ["build", "--target", "aarch64-apple-darwin", "--release"]
+
+[tasks.build_mac_x86_debug]
+command = "cargo"
+args = ["build"]
+
+[tasks.build_mac_x86_release]
+command = "cargo"
+args = ["build", "--release"]
+
+[tasks.clean]
+command = "cargo"
+args = ["clean"]
+
+[tasks.build]
+dependencies = [
+    "build_mac_arm64_debug", 
+    "build_mac_arm64_release", 
+    "build_mac_x86_debug", 
+    "build_mac_x86_release", 
+    #"build_win_x86_debug", 
+    #"build_win_x86_release",
+    ]
