@@ -1,6 +1,6 @@
 [template]
 ignore = [
-    "pre-script.rhai"
+    # "pre-script.rhai"
 ]
 
 [hooks]
