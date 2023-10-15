@@ -1,4 +1,5 @@
 [template]
+include = ["project.gdextension"]
 ignore = [
     # "pre-script.rhai"
 ]
