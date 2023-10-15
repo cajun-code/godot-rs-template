@@ -1,5 +1,5 @@
 [template]
-cargo_generate_version = "0.10.0"
+cargo_generate_version = ">0.17.4"
 ignore = [
     "pre-script.rhai"
 ]
