@@ -1,4 +1,4 @@
-# {project-name}
+# {{project-name}}
 
 Template for creating godot-rust project inside godot project
 
