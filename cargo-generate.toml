@@ -1,11 +1,11 @@
 [template]
 #include = ["project.gdextension"]
 ignore = [
-     "pre-script.rhai"
+     #"pre-script.rhai"
 ]
 
 [hooks]
 #init = [...]
 #pre = ["pre-script.rhai"]
-#post = ["pre-script.rhai"]
+post = ["pre-script.rhai"]
 
