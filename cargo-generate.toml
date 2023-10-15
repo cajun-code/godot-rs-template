@@ -7,5 +7,5 @@ ignore = [
 [hooks]
 #init = [...]
 #pre = ["pre-script.rhai"]
-post = ["pre-script.rhai"]
+#post = ["pre-script.rhai"]
 
