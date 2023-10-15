@@ -1,0 +1,11 @@
+[template]
+cargo_generate_version = "0.10.0"
+ignore = [
+    "pre-script.rhai"
+]
+
+[hooks]
+#init = [...]
+pre = ["pre-script.rhai"]
+#post = [...]
+
