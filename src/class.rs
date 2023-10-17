@@ -11,7 +11,7 @@ struct {{class_name}}{
 }
 
 #[godot_api]
-impl {{parent_name}}Virtual for Rocket{
+impl {{parent_name}}Virtual for {{class_name}}{
     fn init(base: Base<{{parent_name}}>)->Self{
         Self { body: base }
     }
